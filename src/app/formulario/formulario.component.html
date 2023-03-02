@@ -1,12 +1,52 @@
-<form class="row">
+<!-- Two way binding -->
+<!-- <form class="row">
+  <div class="form-group col-md-2">
+   
+    <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control" [(ngModel)]="nombreI" >
+  </div>
+
+  <div class="form-group col-md-2">
+  
+    <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="form-control" [(ngModel)]="apellidoI" >
+  </div>
+
+<div class="col">
+  <button type="submit" class="btn btn-primary" (click)="agregarPersona()" >Agregar</button>
+</div>
+
+</form> -->
+
+
+
+
+<!-- Local Reference -->
+<!-- <form class="row">
     <div class="form-group col-md-2">
-      <!-- <label for='nombre' class="sr-only">Nombre</label> -->
-      <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control" [(ngModel)]="nombreI" >
+     
+      <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control" #nombreInput >
     </div>
   
     <div class="form-group col-md-2">
-      <!-- <label for='nombre' class="sr-only">Nombre</label> -->
-      <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="form-control" [(ngModel)]="apellidoI" >
+ 
+      <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="form-control" #apellidoInput >
+    </div>
+  
+  <div class="col">
+    <button type="submit" class="btn btn-primary" (click)="agregarPersona(nombreInput, apellidoInmput)" >Agregar</button>
+  </div>
+  
+  </form> -->
+
+  <!-- ViewChild + Local Ref  -->
+  <form class="row">
+    <div class="form-group col-md-2">
+     
+      <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control" #nombreInput >
+    </div>
+  
+    <div class="form-group col-md-2">
+ 
+      <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="form-control" #apellidoInput >
     </div>
   
   <div class="col">
