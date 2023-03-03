@@ -1,19 +1,11 @@
-<div class="container">
-
-  <div class="col">
-    <h3> {{title}} </h3>
-  </div>
-<hr>
-
-<app-formulario></app-formulario>
-
-<!-- si quiero indizar a las personas q agrego 
-utilizo punto y coma (;) para separar let i = index -->
-<hr>
-<app-persona *ngFor="let personaElement of personas"
-[persona] = "personaElement" >
-<!-- utilizo property binding para mostrar el objeto persona-->
-</app-persona>
-
+<div class="box" id="heading">
+  <h1> {{title}} </h1>
 </div>
 
+<div class="box">
+  <app-persona *ngFor="let personaElement of personas" [persona]="personaElement"></app-persona>
+</div>
+
+<div class="box">
+  <app-formulario></app-formulario>
+</div>
